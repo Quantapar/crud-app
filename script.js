@@ -10,7 +10,8 @@ form.addEventListener("submit", (e) => {
 
 function formValidation() {
   if (input.value === "") {
-    msg.innerHTML = "post is empty";
+    msg.innerHTML = "<h3>post is empty<h3>";
+
     console.log("failure");
   } else {
     console.log("sucess");
@@ -26,11 +27,27 @@ function acceptdata() {
 }
 
 function createPost() {
-  post.innerHTML += `<div>
-            <p> data.text</p>
-            <span class="options">
-              <i onClick="editPost(this)" class="fas fa-edit"></i>
-              <i onClick="deletePost(this)" class="fas fa-trash-alt"></i>
-            </span>
-          </div>`;
+  post.innerHTML += `
+    <div>
+      <p>${data.text}</p>
+      <span class="options">
+        <i onClick="editPost(this)" class="fas fa-edit"></i>
+        <i onClick="deletePost(this)" class="fas fa-trash-alt"></i>
+      </span>
+    </div>
+  `;
+  input.value = "";
 }
+let deletePost = (e) => {
+  e.parentElement.parentElement.remove();
+};
+
+let editPost = (e) => {
+  let currentText = e.parentElement.previousElementSibling.innerHTML;
+
+  let newText = prompt("Edit your post:");
+
+  if (newText !== null) {
+    e.parentElement.previousElementSibling.innerHTML = newText;
+  }
+};
