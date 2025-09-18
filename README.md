@@ -6,7 +6,7 @@ This app lets users create posts, view them in a feed, update/edit posts, and de
 
 
 
-🎯 Features
+--> Features
 
 ✏️ Create new posts
 
@@ -22,12 +22,12 @@ This app lets users create posts, view them in a feed, update/edit posts, and de
 
 
 
-📚 Learning Objectives
+--> Learning Objectives
 
-Understand the concept of CRUD in web apps.
+-Understand the concept of CRUD in web apps.
 
-Practice DOM manipulation with vanilla JavaScript.
+-Practice DOM manipulation with vanilla JavaScript.
 
-Learn how to dynamically add, update, and remove elements from a web page.
+-Learn how to dynamically add, update, and remove elements from a web page.
 
-Improve CSS layout and styling for a clean UI.
+-Improve CSS layout and styling for a clean UI.
