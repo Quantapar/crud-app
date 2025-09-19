@@ -9,7 +9,7 @@ A simple CRUD (Create, Read, Update, Delete) social media application built with
 
 ## Screenshot
 
-![Social Media App Interface](screenshot.png)
+![Social Media App Interface](assets/images/screenshot.png)
 
 ## Features
 
